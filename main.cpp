@@ -8,9 +8,21 @@
 
 using namespace std;
 
+int sum(int sumStart);
+
 int main() {
-
+  int n;
   cout << "Hello World" << endl;
+  cout << "Enter a number to sum: " << endl;
+  cin  >> n;
 
+  n = sum(n);
+  cout << n << " is the sum." << endl;
+  
   return 0;
+}
+
+int sum(int sumStart) {
+  int summer = (sumStart*(sumStart+1))/2;
+  return summer;
 }
